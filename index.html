@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY YOUTUBE HOME</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="./Style/index.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section Start -->
+    <div id="navbar">
+        <div>
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+        <div id="logo" onclick="home()">
+            <img src="https://www.trustedreviews.com/wp-content/uploads/sites/54/2022/01/youtube_logo_dark-920x460.jpg"
+                alt="">
+        </div>
+        <div id="search_div">
+            <input type="text" name="search" id="search" placeholder="Search" autocomplete="off"
+                onchange="getSearchData()">
+            <span id="search_logo" class="material-symbols-outlined">
+                search
+            </span>
+            <span class="material-symbols-outlined">
+                mic
+            </span>
+        </div>
+        <div id="extras">
+            <span class="material-symbols-outlined">
+                video_camera_front
+            </span>
+            <span class="material-symbols-outlined">
+                apps
+            </span>
+            <span class="material-symbols-outlined">
+                notifications
+            </span>
+            <div id="profile"><img src="https://media-exp1.licdn.com/dms/image/D4D03AQHvylEYuZt1aQ/profile-displayphoto-shrink_400_400/0/1663867824722?e=1669852800&v=beta&t=TTCthKahlar3hCspY2vy54Opjpsw1GMR109Tl8zjkC0" alt=""></div>
+
+        </div>
+    </div>
+    <!-- Navbar Section Start -->
+
+    <!-- Menu Section Start -->
+    <div id="menu">
+        <div>
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            <span>Home</span>
+        </div>
+        <div>
+            <span class="material-symbols-outlined">
+                explore
+            </span>
+            <span>Explore</span>
+        </div>
+        <div>
+            <span class="material-symbols-outlined">
+                subscriptions
+            </span>
+            <span>Subscriptions</span>
+        </div>
+        <div>
+            <span class="material-symbols-outlined">
+                video_library
+            </span>
+            <span>
+                Library
+            </span>
+        </div>
+    </div>
+    <!-- Menu Section End -->
+
+    <!-- Display Section Start -->
+    <!-- filter Section start -->
+    <div>
+        <input type="text" name="filter" id="filter" placeholder="Filter by channel">
+        <button id="fltBtn">Filter</button>
+    </div>
+    <div id="display"></div>
+    <!-- filter Section End -->
+    <!-- Display Sectin End -->
+</body>
+
+</html>
+<script src="./Script/index.js"></script>

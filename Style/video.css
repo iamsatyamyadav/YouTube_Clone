@@ -1,0 +1,111 @@
+* {
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181818;
+}
+
+#navbar {
+    /* border: 1px solid; */
+    /* border-bottom: 1px solid gray; */
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 5% 20% 50% 25%;
+    grid-template-rows: 55px;
+    /* column-gap: 3.3%; */
+    justify-content: space-between;
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+}
+
+#navbar>div {
+    /* border: 1px solid; */
+    height: 100%;
+    border-bottom: 1px solid rgb(70, 69, 69);
+}
+
+#navbar>div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: none;     */
+}
+
+#logo>img {
+    /* border: 1px solid; */
+    height: 100%;
+    width: 125px;
+}
+
+#search_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* input box */
+#search {
+    height: 80%;
+    width: 80%;
+    font-size: 18px;
+    border: none;
+    /* border: 1px solid; */
+    padding-left: 10px;
+    background-color: #121212;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#search_logo {
+    /* border: 1px solid; */
+    padding: 9px 20px;
+    margin-right: 8px;
+    background-color: #313131;
+}
+
+#extras {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#profile {
+    /* border: 1px solid; */
+    padding: 8px;
+    border-radius: 100%;
+    background-color: rgb(127, 20, 20);
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
+#display{
+    margin: 25px 0px 0px 100px;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+#playArea{
+    /* border: 1px solid; */
+    width: fit-content;
+    height: fit-content;
+}
+#playArea>div>p{
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+}
