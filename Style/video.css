@@ -83,9 +83,13 @@ body{
     /* border: 1px solid; */
     padding: 8px;
     border-radius: 100%;
-    background-color: rgb(127, 20, 20);
+    background-color: rgb(170, 118, 59);
     cursor: pointer;
 }
+#profile p {
+    background-color: rgb(170, 118, 59);
+    margin-top: 4px;
+  }
 
 .material-symbols-outlined {
     cursor: pointer;
